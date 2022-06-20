@@ -8,7 +8,7 @@
             <li> <a href="#">PROJECTS</a> </li>
             <li> <a href="#">PROCESS</a> </li>
             <li> <a href="#">TESTIMONIAL</a> </li>
-             <li> <a href="#"></a> </li>
+             <li> <font-awesome-icon icon="fa-regular fa-user" />  </li>
             <li> <a class="getintouch" href="#">GET IN TOUCH</a> </li>
         </ul>
     </nav>

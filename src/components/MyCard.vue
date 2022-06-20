@@ -1,6 +1,7 @@
 <template>
  <div class="card">
- <span class="icona">i</span>
+  
+ <span class="icona"> <font-awesome-icon :icon="cardObjet.icon" /></span>
  <h4>{{cardObjet.title}}</h4>
  <span class="subtitle">{{cardObjet.description}}</span>
 

@@ -1,12 +1,16 @@
 <template>
  <div>
   <header>
-    <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+    <span> <font-awesome-icon icon="fa-solid fa-clock" /> Open Hours: Mon - Sat - 9:00 - 18:00</span>
   
     <div>
      <ul>
         <li> <a href="#">email</a></li>
         <li><a href="#">telephone</a></li>
+         <li><a href="#"> <font-awesome-icon icon="fa-brands fa-facebook-f" /> </a></li>
+          <li><a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
+           <li><a href="#"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a></li>
+         
      </ul>
     
 

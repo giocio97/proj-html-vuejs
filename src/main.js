@@ -1,15 +1,35 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
-// Import Bootstrap and BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
 
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+// /* import font awesome icon component */
+ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+ import { faUser } from '@fortawesome/free-regular-svg-icons'
+ import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
+ import { faChartColumn } from '@fortawesome/free-solid-svg-icons'
+ import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons'
+ import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+ 
+
+
+ 
+ 
+
+
+
+// /* add icons to the library */
+library.add(faUser,faUserGroup,faChartColumn, faGaugeHigh, faClock,faFacebookF, faTwitter, faLinkedinIn )
+
+
+
+/* add font awesome icon component */
+ Vue.component('font-awesome-icon', FontAwesomeIcon )
+
 
 
 Vue.config.productionTip = false
