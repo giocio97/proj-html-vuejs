@@ -3,7 +3,7 @@
   <!-- ciclo card rami -->
     <div class="card-container">
       <MyCard
-      v-for="(item, index) in listaCard"
+      v-for="(item, index) in listaCard "
     :key="index"
     :cardObjet="item"
       />
@@ -41,11 +41,31 @@
     </section>
 
 <!-- sezione action and project -->
-    <section>
+    <section class="action-project">
       <div class="titolo-sezione">
         <span>WE DO MORE FOR EVERYONE</span>
         <h2>Action & <span>Projects</span></h2>
       </div>
+      <ul>
+          <li><a href="#">ALL</a></li>
+           <li><a href="#">ISTITUTIONAL</a></li>
+            <li><a href="#">SOCIAL</a></li>
+             <li><a href="#">EVENTS</a></li>
+              <li><a href="#">INNOVATION</a></li>
+               <li><a href="#">ENVIRONMENT</a></li>
+                <li><a href="#">TECHNOLOGY</a></li>
+        </ul>
+      <div class="card-container-action" >
+        
+         <CardAction 
+       v-for="(item, index) in CardActionProject"
+      :key="index"
+      :actionObjet="item"
+      />
+      </div>
+       
+      
+      
     </section>
     
     <!-- sezione process management -->
@@ -79,6 +99,7 @@
 <script>
 import MyCard from '@/components/MyCard.vue'
 import CardFeedback from '@/components/CardFeedback.vue'
+import CardAction from '@/components/CardAction.vue'
 
 
 export default {
@@ -86,6 +107,7 @@ export default {
   components:{
     MyCard,
     CardFeedback,
+    CardAction
 },
  data(){
     return{
@@ -123,6 +145,47 @@ export default {
             feedback: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis, perspiciatis eaque sapiente ratione nam numquam vero sunt nemo! Accusamus quisquam molestias officiis dolorum praesentium sint accusantium nisi perferendis ratione."
           }
           ],
+           CardActionProject:[
+            {
+              categoria: "ISTITUTIONAL",
+              copertina: require ("../assets/img/project-1.jpg"),
+              titolocard: "Accademic professional program in social media"
+
+           },
+           {
+              categoria: "SOCIAL",
+              copertina: require ("../assets/img/project-2.jpg"),
+              titolocard: "President's speach at the annual meeting"
+
+           },
+           {
+              categoria: "EVENT",
+              copertina: require ("../assets/img/project-3.jpg"),
+              titolocard: "International business trip in Shanghai"
+
+           },
+           {
+              categoria: "INNOVATION",
+              copertina: require ("../assets/img/project-4.jpg"),
+              titolocard: "Technology workshop with education theme"
+
+           },
+           {
+              categoria: "ENVIRONMENT",
+              copertina: require ("../assets/img/project-5.jpg"),
+              titolocard: "Donation of clothes and food to the parrner NGO"
+
+           },
+           {
+              categoria: "TECHNOLOGY",
+              copertina: require ("../assets/img/project-6.jpg"),
+              titolocard: "Confraternization of the procurement team"
+
+           },
+           
+           ]
+
+          
     }
   },
  
@@ -165,6 +228,35 @@ export default {
 
   }
   
+}
+
+.action-project{
+  color: white;
+  background-color: black;
+  ul{
+    display: flex;
+    justify-content: center;
+
+    li {display: inline-block;
+          padding-left: 20px;
+        
+        a{
+          text-decoration: none;
+          color: white;
+        }
+  }
+  }
+
+   
+  .card-container-action{
+    display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  gap: 5px;
+
+  
+}
 }
 .titolo-sezione{
   text-align: center;
