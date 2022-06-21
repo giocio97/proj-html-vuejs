@@ -7,23 +7,23 @@
     <!-- sezione company -->
     <section class="company">
       <div class="company-text">
-        <span>ABOUT THE NETWORK</span>
-        <h2><span>The</span> Company</h2>
+        <span class="color-green">ABOUT THE NETWORK</span>
+        <h2><span class="bg-color" >The</span> Company</h2>
         <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime reiciendis harum ducimus, ipsum iusto
           deserunt obcaecati necessitatibus labore quam quia? Culpa facilis nobis sed tempore incidunt.</span>
         <div class="company-card">
           <div>
-            <h4>0</h4>
+            <h4 class="color-green">0</h4>
             <h3>Employees</h3>
             <span>Lorem, ipsum dolor sit amet. </span>
           </div>
           <div>
-            <h4>0</h4>
+            <h4 class="color-green">0</h4>
             <h3>Partners</h3>
             <span>Lorem, ipsum dolor sit amet. </span>
           </div>
           <div>
-            <h4>0</h4>
+            <h4 class="color-green"> 0</h4>
             <h3>Customers</h3>
             <span>Lorem, ipsum dolor sit amet. </span>
           </div>
@@ -40,8 +40,8 @@
     <!-- sezione action and project -->
     <section class="action-project">
       <div class="titolo-sezione">
-        <span>WE DO MORE FOR EVERYONE</span>
-        <h2>Action & <span>Projects</span></h2>
+        <span class="color-green">WE DO MORE FOR EVERYONE</span>
+        <h2>Action & <span class="bg-color-proj">Projects</span></h2>
       </div>
       <ul>
         <li><a href="#">ALL</a></li>
@@ -64,8 +64,8 @@
     <!-- sezione process management -->
     <section class="process-magement">
       <div class="titolo-sezione">
-        <span>HOW IT WORKS IN PRACTICE</span>
-        <h2><span>Process</span> Management</h2>
+        <span class="color-green">HOW IT WORKS IN PRACTICE</span>
+        <h2><span class="bg-color">Process</span> Management</h2>
         <span>we work with innovative methodologies to ensure that the entire reformatting process is done <br> from
           start to finish as planned.</span>
       </div>
@@ -101,8 +101,8 @@
     <!-- sezione feedback -->
     <section class="card-container">
       <div class="titolo-sezione feedback">
-        <span>CUSTOMER TESTIMONIALS</span>
-        <h2>Trusted <span>feedback</span></h2>
+        <span class="color-green">CUSTOMER TESTIMONIALS</span>
+        <h2>Trusted <span class="bg-color">feedback</span></h2>
         <span>we work intensively in serach of ideals that can add up in the lives of our customers. this is what <br>
           moves use and we are grateful for the recognition.</span>
       </div>
@@ -211,6 +211,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+.bg-color{
+   background-color:#daeced;
+    color: #097a7c;
+    border-radius: 5px;
+    
+}
+.bg-color-proj{
+   background-color:#097a7cc5;
+   border-radius: 5px;
+}
 .card-container {
   display: flex;
   background-color: #eef4ed;
@@ -231,8 +245,13 @@ export default {
 
     .company-card {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       padding: 20px;
+
+      img{
+        width: 50%;
+        object-fit: contain;
+      }
     }
 
     .bottoni {
@@ -304,6 +323,9 @@ export default {
 
 .feedback {
   flex-basis: 100%;
+}
+.color-green{
+  color: #097a7c
 }
 
 @import '../assets/BtnGet.scss';

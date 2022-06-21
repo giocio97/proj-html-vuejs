@@ -1,15 +1,16 @@
 <template>
   <div class="jumbo">
-    <nav>
+   <div class="black-cont">
+     <nav>
       <div><span id="nex">NEX</span><span>GEN</span></div>
       <ul>
         <li> <a href="#">HOME</a> </li>
         <li> <a href="#">ABOUT</a> </li>
         <li> <a href="#">PROJECTS</a> </li>
-        <li> <a href="#">PROCESS</a> </li>
+        <li> <a class="active" href="#">PROCESS</a> </li>
         <li> <a href="#">TESTIMONIAL</a> </li>
         <li>
-          <font-awesome-icon icon="fa-regular fa-user" />
+          <a href="#"> <font-awesome-icon icon="fa-regular fa-user" /></a>
         </li>
         <li> <a class="getintouch" href="#">GET IN TOUCH</a> </li>
       </ul>
@@ -17,13 +18,14 @@
       
     </nav>
      <div class="titolo">
-      <span>HUMAN RESOURCES</span>
-      <h1>Get More <br> Productivity</h1>
+      <span class="human">HUMAN RESOURCES</span>
+      <h1>Get More <br> <span>Productivity</span> </h1>
       <span>Plannig, recruitment and selection process and performance evaluation of employees.</span><br>
       <div class="bottoni">
         <a class="getintouch" href="#">GET IN TOUCH</a>
         <a class="readmore" href="#">READ MORE</a>
       </div>
+   </div>
 
     </div>
 
@@ -46,16 +48,19 @@ export default {
 <style scoped lang="scss">
 .jumbo {
   background-image: url(../assets/img/bg-4.jpg);
-  opacity: 0.8;
-  height: 80vh;
+  height: 100vh;
   color: white;
-  padding: 10px;
   
+  
+  .black-cont{
+    background-color: rgba(0, 0, 0, 0.442);
+    height: 100%;
+  }
 
   nav {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px;
     
 
     #nex {
@@ -73,7 +78,11 @@ export default {
       a {
         text-decoration: none;
         color: white;
+        &:hover{
+          color: #097a7c;
+        }
       }
+      .active{ color: #097a7c;}
     }
   }
 
@@ -83,6 +92,17 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding: 100px;
+    h1{
+      font-size: 50px;
+      
+      span{
+        background-color: #097a7c;
+       
+      }
+    }
+    .human{
+      color: #097a7c;
+    }
 
 
     .bottoni {

@@ -62,6 +62,10 @@ footer {
   background-color: #111117;
   color: white;
   padding: 50px;
+  h3{
+  font-size: 50px;
+  font-weight: bold;
+}
 
   .info {
     // flex-basis: 50%;

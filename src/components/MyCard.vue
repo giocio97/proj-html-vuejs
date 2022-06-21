@@ -2,7 +2,7 @@
  <div class="card">
   
  <span class="cerchio"> <font-awesome-icon :icon="cardObjet.icon" /></span>
- <h4>{{cardObjet.title}}</h4>
+ <h3>{{cardObjet.title}}</h3>
  <span class="subtitle">{{cardObjet.description}}</span>
 
  </div>
@@ -34,7 +34,11 @@ export default {
    padding: 30px;
    border-radius: 10px;
    border: none;
-   h4{padding: 20px;}
+   h3{
+    padding: 20px;
+   font-size: 25px;
+   
+   }
    
    .subtitle{
     padding: 10px;
