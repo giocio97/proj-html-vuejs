@@ -237,11 +237,12 @@ h2{
 
 .company {
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
 
   .company-text {
     text-align: center;
-    padding: 100px;
+     padding: 20px;
+    flex-basis: 50%;
 
     .company-card {
       display: flex;
@@ -249,8 +250,9 @@ h2{
       padding: 20px;
 
       img{
-        width: 50%;
+        width: 100%;
         object-fit: contain;
+        flex-basis: 50%;
       }
     }
 
