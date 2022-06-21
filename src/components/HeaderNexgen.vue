@@ -5,8 +5,8 @@
   
     <div>
      <ul>
-        <li> <a href="#">email</a></li>
-        <li><a href="#">telephone</a></li>
+        <li> <a href="#"> <font-awesome-icon  icon="fa-solid fa-envelope" />  helllo@examle.com</a></li>
+        <li><a href="#"> <font-awesome-icon icon="fa-solid fa-phone" />  +1(305)1234-56778</a></li>
          <li><a href="#"> <font-awesome-icon icon="fa-brands fa-facebook-f" /> </a></li>
           <li><a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
            <li><a href="#"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a></li>
@@ -50,12 +50,15 @@ header{
   display: flex;
   justify-content: space-around;
 
-  ul li {display: inline-block;
-        margin-left: 5px;
+  ul {
+    
+    li {display: inline-block;
+        margin-left: 20px;
         a{
           text-decoration: none;
           color: white;
         }
+  }
   }
 }
 </style>

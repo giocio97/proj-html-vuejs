@@ -14,6 +14,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
+
+
  
 
 
@@ -23,7 +29,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 
 // /* add icons to the library */
-library.add(faUser,faUserGroup,faChartColumn, faGaugeHigh, faClock,faFacebookF, faTwitter, faLinkedinIn )
+library.add(faUser,faUserGroup,faChartColumn, faGaugeHigh, faClock,faFacebookF, faTwitter, faLinkedinIn, faPhone, faEnvelope, faLocationDot )
 
 
 

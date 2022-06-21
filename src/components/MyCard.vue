@@ -1,7 +1,7 @@
 <template>
  <div class="card">
   
- <span class="icona"> <font-awesome-icon :icon="cardObjet.icon" /></span>
+ <span class="cerchio"> <font-awesome-icon :icon="cardObjet.icon" /></span>
  <h4>{{cardObjet.title}}</h4>
  <span class="subtitle">{{cardObjet.description}}</span>
 
@@ -25,6 +25,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '../assets/cerchio.scss';
 .card{
      flex-basis:calc(100% / 3);
     text-align: center;
@@ -33,15 +34,8 @@ export default {
    padding: 30px;
    border-radius: 10px;
    border: none;
-   .icona{
-    background-color:#daeced;
-    color: #097a7c;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    margin: 10px;
-   }
+   h4{padding: 20px;}
+   
    .subtitle{
     padding: 10px;
    }

@@ -62,18 +62,45 @@
     </section>
 
     <!-- sezione process management -->
-    <section>
+    <section class="process-magement">
       <div class="titolo-sezione">
         <span>HOW IT WORKS IN PRACTICE</span>
         <h2><span>Process</span> Management</h2>
         <span>we work with innovative methodologies to ensure that the entire reformatting process is done <br> from
           start to finish as planned.</span>
       </div>
+      <ul >
+        <li>
+          <h4 class="cerchio">01</h4>
+          <h3>collection of information</h3>
+          <span>Lorem ipsum dolor sit amet consectetur.</span>
+        </li>
+        <li>
+          <h4 class="cerchio">02</h4>
+          <h3>Strategic Plannig</h3>
+          <span>Lorem ipsum dolor sit amet consectetur.</span>
+        </li>
+        <li>
+          <h4 class="cerchio">03</h4>
+          <h3>Assignment of responsibilities</h3>
+          <span>Lorem ipsum dolor sit amet consectetur.</span>
+        </li>
+        <li>
+          <h4 class="cerchio">04</h4>
+          <h3>Formatting process</h3>
+          <span>Lorem ipsum dolor sit amet consectetur.</span>
+        </li>
+        <li>
+          <h4 class="cerchio">05</h4>
+          <h3>continuity formalization</h3>
+          <span>Lorem ipsum dolor sit amet consectetur.</span>
+        </li>
+      </ul>
     </section>
 
     <!-- sezione feedback -->
     <section class="card-container">
-      <div class="titolo-sezione">
+      <div class="titolo-sezione feedback">
         <span>CUSTOMER TESTIMONIALS</span>
         <h2>Trusted <span>feedback</span></h2>
         <span>we work intensively in serach of ideals that can add up in the lives of our customers. this is what <br>
@@ -109,7 +136,7 @@ export default {
 
         },
         {
-          icon: "fa-solid fa-chart-column" ,
+          icon: "fa-solid fa-chart-column",
           title: "Core Business",
           description: "It takes innovative approaches to transfrom, modernize, and run existing platforms."
 
@@ -225,6 +252,18 @@ export default {
   }
 
 }
+.process-magement{
+  ul{
+     display: flex;
+    justify-content: center;
+    li{
+       display: inline-block;
+      padding-left: 20px;
+      text-align: center;
+      padding: 20px;
+  }
+  } 
+}
 
 .action-project {
   color: white;
@@ -263,6 +302,11 @@ export default {
 
 }
 
+.feedback {
+  flex-basis: 100%;
+}
+
 @import '../assets/BtnGet.scss';
 @import '../assets/BtnMore.scss';
+@import '../assets/cerchio.scss';
 </style>

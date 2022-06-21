@@ -24,8 +24,15 @@ export default {
 data(){
   return{
     contacts:[
-      {email: "helllo@examle.com",
-      telephone:"+1(305)1234-56778"}
+      {
+        email: "helllo@examle.com",
+        telephone:"+1(305)1234-56778",
+        adress: "Main Avenue, 997"
+
+
+
+      
+      }
     ]
       
     
